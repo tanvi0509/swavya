@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylee.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul.custom-list {
+            list-style-type: none; /* Remove default bullet points */
+        }
+        ul.custom-list li {
+            margin-bottom: 10px; /* Add some spacing between list items */
+        }
+        ul.custom-list li:before {
+            content: ""; /* Add content before each list item */
+            display: inline-block;
+            width: 30px; /* Adjust width of the image */
+            height: 30px; /* Adjust height of the image */
+            background-image: url('https://i.pinimg.com/736x/23/63/b6/2363b669bf28d4c3d4e60058440f8c8a.jpg'); /* Replace 'your-image-url.jpg' with the URL of your custom image */
+            background-size: cover; /* Adjust background size as needed */
+            margin-right: 10px; /* Add some spacing between the image and text */
+        }
+        table, th, td {
+ border: 1px solid black;
+ border-collapse: collapse;
+ }
+    </style>
+
+</head>
+<body>
+
+            <h1>Unordered List</h1>
+    <ul>
+        <li>
+            Apples
+        </li>
+        <li>    
+            Bananas
+        </li>
+        <li>
+            Oranges
+        </li>
+        <li>
+            Grapes
+        </li>
+    </ul>
+    <h1>Ordered List</h1>
+    <ol>
+        <li>
+            Monday
+        </li>
+        <li>
+            Tuesday
+        </li>
+        <li>
+            Wednesday
+        </li>
+        <li>
+            Thursday
+        </li>
+        <li>
+            Friday
+        </li>
+        <li>
+            Saturday
+        </li>
+
+    </ol>
+    <h1>Nested List</h1>
+    <ul>
+        <li>Fruits
+            <ul>
+                <li>
+                    Apples
+                </li>
+                <li>    
+                    Bananas
+                </li>
+                <li>
+                    Oranges
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>Vegetables
+            <ul>
+                <li>
+                    Carrots
+                </li>
+                <li>    
+                    Broccoli
+                </li>
+                <li>
+                    Tomatoes
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h1>More Nested List</h1>
+    <ul>
+        <li>Fruits
+            <ul>
+                <li>
+                    Apples
+                    <ul>
+                        <li>
+                            Red
+                        </li>
+                   
+                        <li>
+                            Green
+                        </li>
+                    </ul>
+                </li>
+                <li>    
+                    Bananas
+                </li>
+                <li>
+                    Oranges
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>Vegetables
+            <ul>
+                <li>
+                    Root Vegetables
+                    <ul>
+                        <li>
+                            Carrots
+                        </li>
+                        <li>
+                            Potatoes
+                        </li>
+                    </ul>
+                        <li>
+                            Leafy Greens
+                            <ul>
+                                <li>
+                                    Spinach
+                                </li>
+                                <li>
+                                    Kale
+                                </li>
+                            </ul>
+                                <li>
+                                    Cruciferous Vegetables
+                                    <ul>
+                                        <li>
+                                            Broccoli
+                                        </li>
+                                        <li>
+                                            Cauliflower
+                                        </li>
+    </ul>
+<ul class="custom-list">
+    <li>Abdul</li>
+    <li>Jason</li>
+    <li>Yadav</li>
+</ul>
+<table style="width:100%">
+    <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+    </tr>
+    <tr>
+    <td>Rahul</td>
+    <td>Khanna</td>
+    <td>21</td>
+    </tr>
+    <tr>
+    <td>Jim</td>
+    <td>Jackson</td>
+    <td>25</td>
+    </tr>
+    </table>
+    <br>
+    <table style="width:100%">
+        <tr>
+        <th>Name</th>
+        <td>Rahul</td>
+        </tr>
+        <tr>
+        <th rowspan="2">Phone</th>
+        <td>7975670191</td>
+        </tr>
+        <tr>
+        <td>8975456731</td>
+        </tr>
+        </table>
+        <table style="width:100%">
+            Life Expectancy By Current age
+
+            <tr>
+            <th colspan="2"><center>65</center></th>
+            <th colspan="2"><center>40</center></th>
+            <th colspan="2"><center>20</center></th>
+            </tr>
+            <tr >
+                <td> Jack</td>
+                <td>Mary</td>
+                <td>John</td>
+                <td>Jane</td>
+                <td> David</td>
+                <td>Mary</td>
+            
+            </tr>
+            
+        </table>
+    <table border="3">
+        <tr>
+            <th>ceItem / Desc.</th>
+            <th>Qty.</th>
+            <th>@</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Waterpaper (Box)</td>
+            <td>100</td>
+            <td>1.15</td>
+            <td>115.00</td>
+        </tr>
+        <tr>
+            <td>Waterpaper (Case)</td>
+            <td>10</td>
+            <td>45.99</td>
+            <td>459.90</td>
+        </tr>
+        <tr>
+            <td>Wastepaper Baskets</td>
+            <td>2</td>
+            <td>17.99</td>
+            <td>35.98</td>
+        </tr>
+        <tr>
+            <td colspan="3"><center><strong>Subtotal</strong></center></td>
+            <td colspan="1"><strong>610.88</strong></td>
+        </tr>
+        <tr>
+            <td colspan="2"><center><strong>Tax</strong></center></td>
+            <td><strong>7%</strong></td>
+            <td colspan="1"><strong>42.76</strong></td>
+        </tr>
+        <tr>
+            <td colspan="3"><center><strong>Total</strong></center></td>
+            <td colspan="1"><strong>653.64</strong></td>
+        </tr>
+        </table>
+</body>
+</html>
+
+
+   

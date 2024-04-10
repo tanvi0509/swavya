@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar with Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      width: 100%;
+      background-color:rgb(255,165,0);
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+      margin: 20px;
+    }
+
+    .day {
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .day:hover {
+      background-color: #e0e0e0;
+    }
+
+    .planner {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(245, 48, 48, 0.1);
+      padding: 20px;
+      z-index: 1;
+      border-radius: 5px;
+      width: 250px;
+      text-align: left;
+    }
+
+    .planner h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .planner p {
+      margin: 0;
+      color: #666;
+    }
+
+    .close-btn {
+      cursor: pointer;
+      color: #007BFF;
+      font-weight: bold;
+      margin-top: 10px;
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+
+    .close-btn:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <center><h1>Diet Calendar</h1></center>
+  </header>
+
+  <div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">name</h3>
+      <p class="age">age</p>
+      <a href="profile.html" class="btn">View profile</a>
+    
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+   </nav>
+
+</div>
+
+  <div class="calendar">
+    <!-- Add day elements for each day of the month -->
+    <div class="day" onclick="showPlanner('day1')">1</div>
+    <div class="day" onclick="showPlanner('day2')">2</div>
+    <div class="day" onclick="showPlanner('day3')">3</div>
+    <div class="day" onclick="showPlanner('day4')">4</div>
+    <div class="day" onclick="showPlanner('day5')">5</div>
+    <div class="day" onclick="showPlanner('day6')">6</div>
+    <div class="day" onclick="showPlanner('day7')">7</div>
+    <div class="day" onclick="showPlanner('day8')">8</div>
+    <div class="day" onclick="showPlanner('day9')">9</div>
+    <div class="day" onclick="showPlanner('day10')">10</div>
+    <div class="day" onclick="showPlanner('day11')">11</div>
+    <div class="day" onclick="showPlanner('day12')">12</div>
+    <div class="day" onclick="showPlanner('day13')">13</div>
+    <div class="day" onclick="showPlanner('day14')">14</div>
+    <div class="day" onclick="showPlanner('day15')">15</div>
+    <div class="day" onclick="showPlanner('day16')">16</div>
+    <div class="day" onclick="showPlanner('day17')">17</div>
+    <div class="day" onclick="showPlanner('day18')">18</div>
+    <div class="day" onclick="showPlanner('day19')">19</div>
+    <div class="day" onclick="showPlanner('day20')">20</div>
+    <div class="day" onclick="showPlanner('day21')">21</div>
+    <div class="day" onclick="showPlanner('day22')">22</div>
+    <div class="day" onclick="showPlanner('day23')">23</div>
+    <div class="day" onclick="showPlanner('day24')">24</div>
+    <div class="day" onclick="showPlanner('day25')">25</div>
+    <div class="day" onclick="showPlanner('day26')">26</div>
+    <div class="day" onclick="showPlanner('day27')">27</div>
+    <div class="day" onclick="showPlanner('day28')">28</div>
+    <div class="day" onclick="showPlanner('day29')">29</div>
+    <div class="day" onclick="showPlanner('day30')">30</div>
+    <!-- ... Repeat for all days of the month -->
+  </div>
+
+  <!-- Planner containers for each day -->
+  <div class="planner" id="day1">
+    <h2><a href ="date.html">Plan for the day</a></h2>
+    <span class="close-btn" onclick="hidePlanner('day1')">Close</span>
+  </div>
+
+  <div class="planner" id="day2">
+    <h2><a href ="diet.html">Plan for the day</a></h2>
+    <span class="close-btn" onclick="hidePlanner('day')">Close</span>
+  </div>
+  <div class="planner" id="day3">
+    <h2><a href ="diet.html">Plan for the day</a></h2>
+    <span class="close-btn" onclick="hidePlanner('day3')">Close</span>
+  </div> 
+  <div class="planner" id="day4">
+    <h2><a href ="diet.html">Plan for the day</a></h2>
+    <span class="close-btn" onclick="hidePlanner('day4')">Close</span>
+  </div>
+  <div class="planner" id="day5">
+    <h2><a href ="diet.html">Plan for the day</a></h2>
+    <span class="close-btn" onclick="hidePlanner('day5')">Close</span>
+  </div>
+  <div class="planner" id="day6">
+    <h2><a href ="diet.html">Plan for the day</a></h2>
+    <span class="close-btn" onclick="hidePlanner('day6')">Close</span>
+  </div>
+  <div class="planner" id="day7">
+    <h2><a href ="diet.html">Plan for the day</a></h2>
+    <span class="close-btn" onclick="hidePlanner('day7')">Close</span>
+  </div>
+
+  <!-- Repeat the planner containers for each day -->
+
+  <script>
+    function showPlanner(dayId) {
+      // Hide all planners
+      var planners = document.querySelectorAll('.planner');
+      planners.forEach(function(planner) {
+        planner.style.display = 'none';
+      });
+
+      // Show the selected planner
+      var selectedPlanner = document.getElementById(dayId);
+      selectedPlanner.style.display = 'block';
+    }
+
+    function hidePlanner(dayId) {
+      // Hide the selected planner
+      var selectedPlanner = document.getElementById(dayId);
+      selectedPlanner.style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

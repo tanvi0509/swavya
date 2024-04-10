@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gym</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="styles2.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">GYM</a>
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars" ><a href="login.html"></a></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">name</h3>
+         <p class="age">age</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="profile.png.jpg" class="image" alt="">
+      <h3 class="name">name</h3>
+      <p class="age">age</p>
+    
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="courses.html"><i class="fas fa-running"></i><span>Speed</span></a>
+      <a href="2.pl"><i class="fas fa-chart-line"></i><span>Your Chart</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+   </nav>
+
+</div>
+
+<section class="home-grid">
+
+   <h1 class="heading">quick options</h1>
+
+   <div class="box-container">
+
+      
+
+      <div class="box">
+         <h3 class="title">top categories</h3>
+         <div class="flex">
+            <a href="#courses" class="btn"><i class="fas fa-grav"></i><span>Weight Lifting</span></a>
+            <a href="#courses"class="btn"><i class="fas fa-chart-simple"></i><span>Cardio</span></a>
+            <a href="#courses"class="btn"><i class="fas fa-hand "></i><span>Chest Day</span></a>
+            <a 
+           
+            <a href="#courses"class="btn"><i class="fas fa-heart"></i><span>Core Workout </span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title">popular topics</h3>
+         <div class="flex">
+            <a href="#"><i></i><span>Weight Loss</span></a>
+            <a href="#"><i></i><span>Weight Gain</span></a>
+            <a href="#"><i></i><span>Muscle Training </span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title"> Gym Training</h3>
+         <p class="tutor">Start your own journey </p>
+         <a href="2.pl" class="inline-btn">get started</a>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+<section class="courses">
+
+   <h1 class="heading">Divisions</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="tutor">
+            <div class="info">
+               <h3>Sweat is just fat crying</h3>
+               
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="https://cdn.dribbble.com/users/609665/screenshots/2992885/heart-dd.gif" alt="">
+            <span>Variations</span>
+         </div>
+         <h3 class="title">Cardio</h3>
+         <a href="playlist.html" class="inline-btn">view tutorial</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <div class="info">
+               <h3>The difference between try and triumph is just a little umph!</h3>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="data:image/jpeg;base64,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" alt="">
+            <span>Variations</span>
+         </div>
+         <h3 class="title">Weight Lifting</h3>
+         <a href="playlist.html" class="inline-btn">view tutorial</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <div class="info">
+               <h3>The only bad workout is the one that didn't happen.</h3>
+               
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtxeqb9HomC8BzKIst3wlfbl7os7a9QqxBHg&usqp=CAU" alt="">
+            <span>10 Types</span>
+         </div>
+         <h3 class="title">Chest Day</h3>
+         <a href="playlist.html" class="inline-btn">view tutorial</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <div class="info">
+          
+               
+            </div>
+         </div>
+        
+
+      
+
+   </div>
+
+   <div class="more-btn">
+      <a href="courses.html" class="inline-option-btn">view all</a>
+   </div>
+
+</section>
+
+<footer class="footer">
+
+   Help | FAQ | Privacy Policy and Terms of Service
+
+</footer>
+   
+</body>
+</html>
